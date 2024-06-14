@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programando Sabor</title>
+    <link rel="icon" href="logoo.png" type="imagem">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            border-bottom: 3px solid #f8f9fa;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .form-check-label {
+            font-size: 16px;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-black text-white text-center p-5">
+        <h1>Programando Sabor</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logoo.png" alt="Logo" style="height: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doces.html">Doces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="salgados.html">Salgados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="drinks.html">Drinks</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mais Sabores
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="japonesa.html">Comida Japonesa</a></li>
+                            <li><a class="dropdown-item" href="mexicana.html">Comida Mexicana</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="text-black text-center p-5">Wrap de Mandioca</h1>
+
+    <main class="container">
+        <section class="row">
+            <div class="col-sm-12 col-lg-6 mx-auto">
+                <div class="card">
+                    <img style="width: 100%; height: auto; margin: 0 auto;" src="https://s2-receitas.glbimg.com/ZaFEaGteX_qjOqT0Xx4apiLFOb0=/0x0:1600x900/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/K/P/3GapBaRkC7CoSovjgbqA/wrap-de-mandioca.jpeg" class="card-img-top" alt="Imagem 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Wrap de Mandioca</h5>
+                        <p class="card-text">
+                            Dizem que dois ingredientes não são o suficiente para fazer uma comida ficar bom, e então quem disse isso provou a receita de Wrap de Mandioca e retirou o que disse. São dois ingredientes mesmo? Vamos conferir. Mas o que importa é:                        </p>
+                        <p>Isso é delicioso pra caramba!</p>
+                            <h2 class="mt-4">Ingredientes:</h2>
+                        <ul class="list-unstyled">
+                            <li><input class="form-check-input me-2" type="checkbox" id="mandioca"><label for="mandioca">500 gramas de mandioca cozida quente</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="sal-wrap"><label for="sal-wrap">Sal a gosto</label></li>
+                        </ul>
+                        <h2>Modo de Preparo:</h2>
+                        <ol>
+                            <li>Coloque em um prato 500 gramas de mandioca cozida quente e amasse com um garfo ou amassador de batatas. Tempere com sal a gosto, misture bem até formar uma massa homogênea e divida em 5 porções. Reserve.</li>
+                        <li>Pegue uma porção de massa e coloque entre 2 papel filme em cima de uma bancada. Abra a massa com um rolo ou com as mãos.</li>
+                        <li>Com o auxílio de uma tigela (17 centímetros de diâmetro), corte 1 disco. Dica: acerte as laterais para ficar um disco bem redondinho e reserve as aparas.</li>
+                        <li>Coloque 1 disco em uma frigideira antiaderente, aquecida em fogo alto e deixe por 3 minutos de cada lado ou até dourar.</li>
+                        <li>Retire da frigideira com uma espátula, coloque em um prato e repita o processo com as outras porções de massa separando com papel filme para não grudar. Recheie a gosto e sirva.</li>
+                    </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body

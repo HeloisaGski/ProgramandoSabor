@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programando Sabor</title>
+    <link rel="icon" href="logoo.png" type="imagem">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            border-bottom: 3px solid #f8f9fa;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .form-check-label {
+            font-size: 16px;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-black text-white text-center p-5">
+        <h1>Programando Sabor</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logoo.png" alt="Logo" style="height: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doces.html">Doces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="salgados.html">Salgados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="drinks.html">Drinks</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mais Sabores
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="japonesa.html">Comida Japonesa</a></li>
+                            <li><a class="dropdown-item" href="mexicana.html">Comida Mexicana</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1 class="text-black text-center p-5">Fepa</h1>
+                <section class="row">
+                <div class="col-sm-12 col-lg-6 mx-auto">
+                    <div class="card">
+                        <img style="width: 100%; height: auto; margin: 0 auto;" src="https://s2-receitas.glbimg.com/FOhLAxSVOIP6FN6RZh_SheRafSw=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/N/m/S6EH4UTaCi7nkBCeyBKg/fepa-flavia-di-na-piscina.jpg" class="card-img-top" alt="Imagem 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Fepa</h5>
+                        <p class="card-text">
+                            O Fepa é uma fusão exótica de sabores tropicais que transporta você para um paraíso de paladar. Este coquetel exuberante combina o calor do rum prata com a doçura suculenta do abacaxi fresco, equilibrado pela nota picante do açúcar de gengibre e enriquecido pelo sabor cremoso do rum de coco. As folhas de hortelã adicionam um toque de frescor revigorante, enquanto a água de coco completa a experiência, proporcionando uma sensação refrescante e inesquecível. Uma verdadeira explosão de sabor tropical em cada gole.
+                        </p>
+                        <h2 class="mt-4">Ingredientes:</h2>
+                        <ul class="list-unstyled">
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="50ml-rum"><label class="form-check-label" for="50ml-rum">50 mililitros de rum prata</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="cubos-abacaxi" checked><label class="form-check-label" for="cubos-abacaxi">3 a 4 cubos de abacaxi</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="açúcar de gengibre"><label class="form-check-label" for="açúcar de gengibre">2 colheres bailarinas de açúcar de gengibre</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="50ml-rum-coco"><label class="form-check-label" for="50ml-rum-coco">5 mililitros de rum de coco</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="hortela"><label class="form-check-label" for="hortela">8 folhas hortelã</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="agua-coco"><label class="form-check-label" for="agua-coco">Água de coco</label></li>
+                        </ul>
+                        <h2 class="mt-4">Modo de Preparo:</h2>
+                        <ol>
+                            <li>Na coqueteleira, coloque o abacaxi e o açúcar. Macere bem.</li>
+                            <li>Adicione, em seguida, o hortelã, o rum de coco e o rum prata.</li>
+                            <li>Adicione gelo e bata bastante</li>
+                            <li>Sirva em um copo Old Fashioned (também conhecido como o copo da caipirinha) e finalize completando com a água de coco e um ramo de hortelã para ter um aroma mais refrescante</li>
+                        </ol>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <h1 class="text-black text-center p-5">Passion Whisky</h1>
+        <section class="row">
+            <div class="col-sm-12 col-lg-6 mx-auto">
+                <div class="card">
+                    <img style="width: 100%; height: auto; margin: 0 auto;" src="https://s2-receitas.glbimg.com/3h1FvUcDs3GTvXF7ePRWgfqzcbc=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/5/3/CMAotWQBGazhSx66FitQ/passion-whisky-maracuja-limao-siciliano-e-whisky-39-.jpg" class="card-img-top" alt="Imagem 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Passion Whisky</h5>
+                        <p class="card-text">
+                            Saboreie o Passion Whisky: uma mistura equilibrada de sabores tropicais e sofisticados. Neste coquetel refrescante, a doçura do maracujá se une à acidez do limão-siciliano e ao toque picante do gengibre, harmonizando perfeitamente com o sabor amadeirado do whisky. Servido em um elegante copo de whisky, este drink é adornado com um ramo fresco de manjericão, acrescentando uma nota aromática e refrescante à experiência sensorial. Uma verdadeira celebração de sabores para os apreciadores de bebidas refinadas.                        </p>
+                        <h2 class="mt-4">Ingredientes:</h2>
+                        <ul class="list-unstyled">
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="50ml-whisky"><label class="form-check-label" for="50ml-whisky">50 mililitros de whisky</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="25ml-maracuja" checked><label class="form-check-label" for="25ml-maracuja">25 mililitros de maracujá batido e coado</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="20ml-limao"><label class="form-check-label" for="20ml-limao">20 mililitros de suco de limão-siciliano</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="acucar-gengibre"><label class="form-check-label" for="acucar-gengibre">2 colheres bailarinas de açúcar de gengibre</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="casca"><label class="form-check-label" for="casca">Cascas de limão-siciliano</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="ramo"><label class="form-check-label" for="ramo">Ramo de manjericão</label></li>
+                        </ul>
+                        <h2 class="mt-4">Modo de Preparo:</h2>
+                        <ol>
+                            <li>Reserve um copo on the rocks com gelo.</li>
+                            <li>Na coqueteleira, adicione gelo e todos os ingredientes, exceto o zest e o manjericão. Bata vigorosamente bem.</li>
+                            <li>Com um strainer e 1 peneira, faça a coagem ao copo com gelo.</li>
+                            <li>Adicione o ramo de manjericão e dê uma leve torção no zest de siciliano, finalizando esse drink super-refrescante e elegante.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="text-black text-center p-5">Moderninha</h1>
+        <section class="row">
+            <div class="col-sm-12 col-lg-6 mx-auto">
+                <div class="card">
+                    <img style="width: 100%; height: auto; margin: 0 auto;" src="https://s2-receitas.glbimg.com/ZA4AQOhHBMTBqPW6xnvLP3EjDhc=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/V/M/Cq8ABYROetqezVlUSRyw/moderninha-na-piscinha-flavia-di-5-.jpg" class="card-img-top" alt="Imagem 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Moderninha</h5>
+                        <p class="card-text">
+                            Experimente a Moderninha: uma mistura refrescante e vibrante de sabores. Neste drink, a cachaça, com sua essência brasileira, se une à acidez cítrica do limão, à doçura do mel e à nota picante do gengibre, criando uma explosão de sabores no paladar. Com um toque exótico do Caribe, este coquetel é preparado na coqueteleira com gelo, resultando em uma bebida refrescante e revigorante. Servido no copo on the rocks, o drink é decorado com fatias de limão e lascas de gengibre, adicionando um toque visual e aromático à experiência.                        <h2 class="mt-4">Ingredientes:</h2>
+                        <ul class="list-unstyled">
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="50ml-cacha"><label class="form-check-label" for="50ml-cacha">50 mililitros de cachaça</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="50ml-suco" checked><label class="form-check-label" for="50ml-suco">50 mililitros de suco de limão </label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="25ml-sumo"><label class="form-check-label" for="25ml-sumo">25 mililitros de sumo de gengibre</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="20ml-xarope"><label class="form-check-label" for="20ml-xarope">20 mililitros de xarope de mel </label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="5ml-rum"><label class="form-check-label" for="5ml-rum">5 mililitros de rum de coco</label></li>
+                        </ul>
+                        <h2 class="mt-4">Modo de Preparo:</h2>
+                        <ol>
+                            <li>Adicione todos os ingredientes em uma coqueteleira e bata vigorosamente</li>
+                            <li>Sirva o drink em um copo on the rocks (copo de whisky) com gelo. Decore com uma rodela de limão-tahiti.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pagination  -->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                </li>
+                <li class="page-item"><a class="page-link" href="drinks.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="drin2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="drin3.html">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="drin2.html">Próximo</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Pagination -->
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programando Sabor</title>
+    <link rel="icon" href="logoo.png" type="imagem">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            border-bottom: 3px solid #f8f9fa;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .form-check-label {
+            font-size: 16px;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-black text-white text-center p-5">
+        <h1>Programando Sabor</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logoo.png" alt="Logo" style="height: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doces.html">Doces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="salgados.html">Salgados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="drinks.html">Drinks</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mais Sabores
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="japonesa.html">Comida Japonesa</a></li>
+                            <li><a class="dropdown-item" href="mexicana.html">Comida Mexicana</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1 class="text-black text-center p-5">Bolinho de Chuva</h1>
+        <section class="row">
+            <div class="col-sm-12 col-lg-6 mx-auto">
+                <div class="card">
+                    <img style="width: 100%; height: auto; margin: 0 auto;" src="https://www.receiteria.com.br/wp-content/uploads/bolinho-de-chuva-simples-e-sequinho.jpeg" class="card-img-top" alt="Bolinho de Chuva">
+                    <div class="card-body">
+                        <h5 class="card-title">Bolinho de Chuva</h5>
+                        <p class="card-text">
+                            O bolinho de chuva já é tradição no café da manhã ou lanche da tarde dos brasileiros. Que tal relembrar os tempos de infância com o doce?
+                        </p>
+                        <h2 class="mt-4">Ingredientes:</h2>
+                        <ul class="list-unstyled">
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="leite"><label class="form-check-label" for="leite">1 xícara de leite</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="acucar"><label class="form-check-label" for="acucar">1 xícara de açúcar</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="ovo"><label class="form-check-label" for="ovo">1 ovo</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="fermento"><label class="form-check-label" for="fermento">1 colher de sopa de fermento em pó</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="farinha"><label class="form-check-label" for="farinha">2 xícaras de farinha de trigo</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="oleo"><label class="form-check-label" for="oleo">Óleo para fritar</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="acucar-canela"><label class="form-check-label" for="acucar-canela">Açúcar e canela para polvilhar</label></li>
+                        </ul>
+                        <h2 class="mt-4">Modo de Preparo:</h2>
+                        <ol>
+                            <li>Em uma vasilha, misture o ovo com o açúcar;</li>
+                            <li>Depois coloque o leite e o fermento em pó. Acrescente aos poucos a farinha de trigo, até dar o ponto de pegar a massa com uma colher e demorar um pouco para cair;</li>
+                            <li>Coloque o óleo em uma panela e leve ao fogo baixo para esquentar;</li>
+                            <li>Quando o óleo estiver bem quente, use duas colheres para fazer os bolinhos (use uma para pegar a massa e a outra para ajudar a escorregar os bolinhos no óleo quente);</li>
+                            <li>Depois que os bolinhos estiverem fritos, coloque-os em uma vasilha com guardanapo, passe os bolinhos no açúcar e na canela, e sirva.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="text-black text-center p-5">Creme de Milho</h1>
+        <section class="row">
+            <div class="col-sm-12 col-lg-6 mx-auto">
+                <div class="card">
+                    <img style="width: 100%; height: auto; margin: 0 auto;" src="https://static.itdg.com.br/images/1200-675/d1ce59af222aeec91bf95c20cfb37e76/327786-original.jpg" class="card-img-top" alt="Creme de Milho">
+                    <div class="card-body">
+                        <h5 class="card-title">Creme de Milho</h5>
+                        <p class="card-text">
+                            Creme de milho é uma receita fácil de acompanhamento que fica pronta em poucos minutos. Simples de fazer, ele combinado com grelhados e assados.
+                        </p>
+                        <h2 class="mt-4">Ingredientes:</h2>
+                        <ul class="list-unstyled">
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="milho"><label class="form-check-label" for="milho">1 lata de milho</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="leite"><label class="form-check-label" for="leite">1 xícara e meia de chá de leite</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="creme-leite"><label class="form-check-label" for="creme-leite">1 caixinha de creme de leite</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="farinha"><label class="form-check-label" for="farinha">2 colheres de sopa de farinha de trigo</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="cebola"><label class="form-check-label" for="cebola">1 cebola ralada</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="sal"><label class="form-check-label" for="sal">Sal a gosto</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="pimenta"><label class="form-check-label" for="pimenta">Pimenta-do-reino e temperos a gosto</label></li>
+                        </ul>
+                        <h2 class="mt-4">Modo de Preparo:</h2>
+                        <ol>
+                            <li>No liquidificador, bata o milho com o leite até obter um creme bem homogêneo;</li>
+                            <li>Em uma panela, aqueça a manteiga até que ela derreta levemente;</li>
+                            <li>Acrescente a cebola ralada e refogue por alguns minutos até que ela fique dourada;</li>
+                            <li>Adicione o conteúdo do liquidificador e os temperos a gosto, e espere ferver em fogo baixo;</li>
+                            <li>Em um copo, dissolva a farinha de trigo em um pouquinho de leite ou água;</li>
+                            <li>Despeje essa mistura aos poucos na panela, misturando rapidamente até que o creme de milho engrosse;</li>
+                            <li>Continue cozinhando por mais 5 minutos em fogo baixo;</li>
+                            <li>Desligue o fogo, acrescente o creme de leite e misture bem. Está pronto para servir!</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="text-black text-center p-5">Bolo de Cenoura</h1>
+        <section class="row">
+            <div class="col-sm-12 col-lg-6 mx-auto">
+                <div class="card">
+                    <img style="width: 100%; height: auto; margin: 0 auto;" src="https://catracalivre.com.br/wp-content/uploads/2024/01/depositphotos-94554672-l.jpg" class="card-img-top" alt="Bolo de Cenoura">
+                    <div class="card-body">
+                        <h5 class="card-title">Bolo de Cenoura</h5>
+                        <p class="card-text">
+                            O bolo de cenoura é uma opção simples e prática para o café da manhã, lanche da tarde ou para uma ocasião especial com famílias e amigos.
+                        </p>
+                        <h2 class="mt-4">Ingredientes - Massa:</h2>
+                        <ul class="list-unstyled">
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="cenouras"><label class="form-check-label" for="cenouras">3 cenouras médias</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="ovos"><label class="form-check-label" for="ovos">3 ovos</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="acucar"><label class="form-check-label" for="acucar">2 xícaras de açúcar</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="oleo"><label class="form-check-label" for="oleo">1 xícara de óleo de canola</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="farinha"><label class="form-check-label" for="farinha">2 xícaras de farinha de trigo</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="sal"><label class="form-check-label" for="sal">1 pitada de sal</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="fermento"><label class="form-check-label" for="fermento">1 colher de sopa de fermento químico</label></li>
+                        </ul>
+                        <h2 class="mt-4">Modo de Preparo - Massa:</h2>
+                        <ol>
+                            <li>No liquidificador, coloque 3 cenouras médias, 3 ovos, 1 xícara de óleo de canola e 2 xícaras de açúcar. Bata até ficar homogêneo;</li>
+                            <li>Em uma tigela, coloque 2 xícaras de farinha de trigo, 1 pitada de sal e 1 colher de sopa de fermento químico. Misture;</li>
+                            <li>Em seguida, adicione a mistura do liquidificador na tigela;</li>
+                            <li>Com um fouet, misture até ficar homogêneo;</li>
+                            <li>Transfira a massa para uma forma untada e enfarinhada;</li>
+                            <li>Leve para assar em forno preaquecido a 180 graus Celsius por 40 minutos.</li>
+                        </ol>
+                        <h2 class="mt-4">Ingredientes - Cobertura:</h2>
+                        <ul class="list-unstyled">
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="acucar-cobertura"><label class="form-check-label" for="acucar-cobertura">5 colheres de sopa de açúcar</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="chocolate"><label class="form-check-label" for="chocolate">3 colheres de sopa de chocolate em pó</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="manteiga"><label class="form-check-label" for="manteiga">2 colheres de sopa de manteiga</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="leite-cobertura"><label class="form-check-label" for="leite-cobertura">2 colheres de sopa de leite</label></li>
+                        </ul>
+                        <h2 class="mt-4">Modo de Preparo - Cobertura:</h2>
+                        <ol>
+                            <li>Em uma panela, coloque 5 colheres de sopa de açúcar, 3 colheres de sopa de chocolate em pó, 2 colheres de sopa de leite e 2 colheres de sopa de manteiga sem sal;</li>
+                            <li>Mexa e deixe cozinhar até levantar fervura;</li>
+                            <li>Assim que a mistura soltar do fundo, está pronta a cobertura;</li>
+                            <li>Espere o bolo esfriar e derrame a calda ainda quente sobre ele;</li>
+                            <li>Espalhe a cobertura e deixe esfriar antes de servir.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pagination -->
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item">
+            <a class="page-link" href="doces.html" tabindex="-1">Anterior</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="doces.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="doc2.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="doc3.html">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="doc3.html">Próximo</a>
+        </li>
+    </ul>
+</nav>
+<!-- Pagination -->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

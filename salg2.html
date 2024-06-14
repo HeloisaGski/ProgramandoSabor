@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programando Sabor</title>
+    <link rel="icon" href="logoo.png" type="imagem">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            border-bottom: 3px solid #f8f9fa;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .form-check-label {
+            font-size: 16px;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-black text-white text-center p-5">
+        <h1>Programando Sabor</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logoo.png" alt="Logo" style="height: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doces.html">Doces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="salgados.html">Salgados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="drinks.html">Drinks</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mais Sabores
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="japonesa.html">Comida Japonesa</a></li>
+                            <li><a class="dropdown-item" href="mexicana.html">Comida Mexicana</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <h1 class="text-black text-center p-5">Tortilha Caseira</h1>   
+        <section class="row">
+            <div class="col-sm-12 col-lg-6 mx-auto">
+                <div class="card">
+                    <img style="width: 100%; height: auto; margin: 0 auto;" src="https://s2-receitas.glbimg.com/Fbby4uwxaTWRdXQmiJJQQxoUXR0=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2023/N/2/pH1ggiRwikz0RbiYgD7A/tortilha-caseira-mexicana.jpg" class="card-img-top" alt="Tortilha caseira">
+                    <div class="card-body">
+                        <h5 class="card-title">Tortilha Caseira</h5>
+                        <p class="card-text">Tortilha caseira é uma receita criativa, que utiliza a massa de pastel como ingrediente principal.</p>
+                        <h2>Ingredientes:</h2>
+                        <ul class="list-unstyled">
+                            <li><input class="form-check-input me-2" type="checkbox" id="massa-pastel"><label for="massa-pastel">200 gramas de massa de pastel</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="acucar"><label for="acucar">1 colher de sopa de açúcar</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="cominho"><label for="cominho">1 colher de chá de cominho</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="alho-po"><label for="alho-po">1 colher de sopa de alho em pó</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="cebola-po"><label for="cebola-po">1 colher de sopa de cebola em pó</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="paprica-defumada"><label for="paprica-defumada">1 colher de sopa de páprica defumada</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="sal-tortilha"><label for="sal-tortilha">Sal a gosto</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="pimenta-reino"><label for="pimenta-reino">Pimenta-do-reino a gosto</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="azeite"><label for="azeite">50 mililitros de azeite</label></li>
+                        </ul>
+                        <h2>Modo de Preparo:</h2>
+                        <ol>
+                            <li>Coloque a massa de pastel sobre uma superfície e corte cada disco em 8 fatias.</li>
+                            <li>Em uma tigela, coloque o açúcar, o cominho, o alho em pó, a cebola em pó, a páprica defumada, o sal e a pimenta-do-reino.</li>
+                            <li>Adicione o azeite sobre os ingredientes e misture bem com uma colher.</li>
+                            <li>Unte o fundo de uma assadeira com uma camada generosa do molho.</li>
+                            <li>Organize as fatias de massa de pastel sobre a forma untada com o molho.</li>
+                            <li>Pincele mais molho sobre cada uma das fatias da massa.</li>
+                            <li>Leve ao forno preaquecido a 180 graus Célsius por 5 minutos.</li>
+                            <li>Sua receita de tortilha caseira está pronta para ser servida! Bom apetite!</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <h1 class="text-black text-center p-5">Pão de Queijo na Air Fryer</h1>   
+        <section class="row mt-5">
+            <div class="col-sm-12 col-lg-6 mx-auto">
+                <div class="card">
+                    <img style="width: 100%; height: auto; margin: 0 auto;" src="https://i.panelinha.com.br/i1/228-bk-3076-blog-ayu2859.webp" class="card-img-top" alt="Pão de Queijo na Air Fryer">
+                    <div class="card-body">
+                        <h5 class="card-title">Pão de Queijo na Air Fryer</h5>
+                        <p class="card-text">Saboroso, quentinho e um ótimo lanche pra manhãs frias.</p>
+                        <h2>Ingredientes:</h2>
+                        <ul class="list-unstyled">
+                            <li><input class="form-check-input me-2" type="checkbox" id="oleo"><label for="oleo">1 xícara (chá) de óleo (240 ml)</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="agua"><label for="agua">1 xícara (chá) de água</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="leite"><label for="leite">1 xícara (chá) de leite</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="sal-pao-queijo"><label for="sal-pao-queijo">2 colheres (sopa) de sal (ou a gosto)</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="polvilho-doce"><label for="polvilho-doce">1 kg de polvilho doce</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="ovos"><label for="ovos">3 a 4 ovos</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="queijo-minas"><label for="queijo-minas">300 g de queijo minas padrão ralado fino</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="parmesao"><label for="parmesao">100 g de parmesão ralado fino</label></li>
+                        </ul>
+                        <h2>Modo de Preparo:</h2>
+                        <ol>
+                            <li>Leve o óleo com a água, o leite e o sal ao fogo médio até ferver.</li>
+                            <li>Despeje sobre o polvilho, misturando para escaldar completamente. Deixe amornar.</li>
+                            <li>Adicione os ovos (reserve 1 caso precise dar liga) e misture.</li>
+                            <li>Junte os queijos e misture até incorporar e dar liga (ponto de enrolar).</li>
+                            <li>Modele bolinhas com 30 g cada e disponha em assadeiras, mantendo espaço de uma para outra.</li>
+                            <li>Leve ao freezer até congelar e, depois, armazene em saquinhos apropriados. Asse na Air Fryer a 180 graus Célsius por 15 minutos ou até dourar.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="text-black text-center p-5">Pizza de Tapioca</h1>   
+            <section class="row mt-5">
+            <div class="col-sm-12 col-lg-6 mx-auto">
+                <div class="card">
+                    <img style="width: 100%; height: auto; margin: 0 auto;" src="https://i.ytimg.com/vi/vAP3irqFVKw/maxresdefault.jpg" class="card-img-top" alt="Pizza de Tapioca">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza de Tapioca</h5>
+                        <p class="card-text">Uma pizza leve e saudável feita com massa de tapioca.</p>
+                        <h2>Ingredientes:</h2>
+                        <ul class="list-unstyled">
+                            <li><input class="form-check-input me-2" type="checkbox" id="goma-tapioca"><label for="goma-tapioca">1 xícara de goma de tapioca hidratada</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="molho-tomate"><label for="molho-tomate">1/2 xícara de molho de tomate</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="queijo-mussarela"><label for="queijo-mussarela">200g de queijo mussarela ralado</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="tomate-fatiado"><label for="tomate-fatiado">1 tomate fatiado</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="oregano"><label for="oregano">Orégano a gosto</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="azeitona"><label for="azeitona">Azeitonas a gosto</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="azeite-tapioca"><label for="azeite-tapioca">Azeite a gosto</label></li>
+                        </ul>
+                        <h2>Modo de Preparo:</h2>
+                        <ol>
+                            <li>Aqueça uma frigideira antiaderente em fogo médio.</li>
+                            <li>Espalhe a goma de tapioca na frigideira formando um disco uniforme, como se fosse uma panqueca.</li>
+                            <li>Deixe a massa cozinhar por cerca de 2 minutos ou até começar a desgrudar da frigideira.</li>
+                            <li>Vire a massa para cozinhar o outro lado por mais 1 minuto.</li>
+                            <li>Espalhe o molho de tomate sobre a massa de tapioca já cozida.</li>
+                            <li>Distribua o queijo mussarela ralado por cima do molho de tomate.</li>
+                            <li>Adicione as fatias de tomate, as azeitonas e o orégano a gosto.</li>
+                            <li>Regue com azeite e tampe a frigideira para o queijo derreter, cerca de 3 a 5 minutos.</li>
+                            <li>Retire do fogo, corte em fatias e sirva quente.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+         </section>
+          <!-- Pagination -->
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item">
+            <a class="page-link" href="salgados.html" tabindex="-1">Anterior</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="salgados.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="salg2.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="salg3.html">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="salg3.html">Próximo</a>
+        </li>
+    </ul>
+</nav>
+<!-- Pagination -->
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>    
+            

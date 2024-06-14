@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programando Sabor</title>
+    <link rel="icon" href="logoo.png" type="imagem">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            border-bottom: 3px solid #f8f9fa;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .form-check-label {
+            font-size: 16px;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-black text-white text-center p-5">
+        <h1>Programando Sabor</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logoo.png" alt="Logo" style="height: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doces.html">Doces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="salgados.html">Salgados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="drinks.html">Drinks</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mais Sabores
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="japonesa.html">Comida Japonesa</a></li>
+                            <li><a class="dropdown-item" href="mexicana.html">Comida Mexicana</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="text-black text-center p-5">Hambúrguer com Batata Frita Temperada</h1>
+
+    <main class="container">
+        <section class="row">
+            <div class="col-sm-12 col-lg-6 mx-auto">
+                <div class="card">
+                    <img style="width: 100%; height: auto; margin: 0 auto;" src="https://st1.uvnimg.com/cc/be/345312b84e4ca717b4f8c61a6e65/hamburguer-fritas-0822.jpg" class="card-img-top" alt="Imagem 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Hambúrguer com Batata Frita Temperada</h5>
+                        <p class="card-text">
+                            Comer hambúrguer já é gostoso, mas quando você mesmo prepara parece que ele fica ainda mais gostoso, não concorda? Com essa receita é quase impossível você não querer se tornar o próximo Papa's Burg.
+                        </p>
+                        <h2 class="mt-4">Ingredientes:</h2>
+                        <ul class="list-unstyled">
+                            <li><input class="form-check-input me-2" type="checkbox" id="paes-brioche"><label for="paes-brioche">5 pães brioche</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="manteiga"><label for="manteiga">1 colher de sopa de manteiga</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="bacon"><label for="bacon">10 fatias finas de bacon</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="picles"><label for="picles">1 vidro de picles</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="cheddar"><label for="cheddar">10 fatias de queijo cheddar</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="alface-americana"><label for="alface-americana">1 alface-americana</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="hamburguer"><label for="hamburguer">5 hambúrgueres</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="cebolas-roxas"><label for="cebolas-roxas">2 cebolas-roxas</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="peito-bovino"><label for="peito-bovino">160 gramas de peito bovino</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="cupim"><label for="cupim">40 gramas de cupim</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="folhas-alface"><label for="folhas-alface">Folhas de alface</label></li>
+                        </ul>
+                        <h3>Molho de Picles</h3>
+                    <ul class="list-unstyled">
+                        <li><input class="form-check-input me-2" type="checkbox" id="paprica-molho"><label for="paprica-molho">Páprica doce a gosto</label></li>
+                        <li><input class="form-check-input me-2" type="checkbox" id="pimenta-molho"><label for="pimenta-molho">Pimenta-do-reino moída a gosto</label></li>
+                        <li><input class="form-check-input me-2" type="checkbox" id="sal-molho"><label for="sal-molho">Sal a gosto</label></li>
+                        <li><input class="form-check-input me-2" type="checkbox" id="ketchup-molho"><label for="ketchup-molho">Ketchup a gosto</label></li>
+                        <li><input class="form-check-input me-2" type="checkbox" id="mostarda-molho"><label for="mostarda-molho">Mostarda a gosto</label></li>
+                        <li><input class="form-check-input me-2" type="checkbox" id="picles-picados"><label for="picles-picados">1 vidro de picles picados</label></li>
+                        <li><input class="form-check-input me-2" type="checkbox" id="maionese-molho"><label for="maionese-molho">Maionese a gosto</label></li>
+                    </ul>
+                    <h3>Batata Frita Temperada</h3>
+                    <ul class="list-unstyled">
+                        <li><input class="form-check-input me-2" type="checkbox" id="batata"><label for="batata">1 quilo de batata asterix ou baraka</label></li>
+                        <li><input class="form-check-input me-2" type="checkbox" id="paprica-batata"><label for="paprica-batata">3 colheres de sopa de páprica doce</label></li>
+                        <li><input class="form-check-input me-2" type="checkbox" id="alho-batata"><label for="alho-batata">2 colheres de sopa de alho em pó</label></li>
+                        <li><input class="form-check-input me-2" type="checkbox" id="cebola-batata"><label for="cebola-batata">2 colheres de sopa de cebola em pó</label></li>
+                        <li><input class="form-check-input me-2" type="checkbox" id="caiena-batata"><label for="caiena-batata">2 colheres de sopa de pimenta-de-caiena</label></li>
+                        <li><input class="form-check-input me-2" type="checkbox" id="pimenta-reino-batata"><label for="pimenta-reino-batata">1 colher de sopa de pimenta-do-reino moída</label></li>
+                        <li><input class="form-check-input me-2" type="checkbox" id="oregano-batata"><label for="oregano-batata">1 colher de chá de orégano triturado</label></li>
+                        <li><input class="form-check-input me-2" type="checkbox" id="pimenta-branca-batata"><label for="pimenta-branca-batata">1 colher de chá de pimenta-branca</label></li>
+                        <li><input class="form-check-input me-2" type="checkbox" id="cominho-batata"><label for="cominho-batata">1 colher de chá de cominho</label></li>
+                        <li><input class="form-check-input me-2" type="checkbox" id="louro-batata"><label for="louro-batata">Um quarto de colher de chá de louro em pó</label></li>
+                        <li><input class="form-check-input me-2" type="checkbox" id="sal-batata"><label for="sal-batata">1 colher de sopa de sal</label></li>
+                        <li><input class="form-check-input me-2" type="checkbox" id="oleo-batata"><label for="oleo-batata">Óleo para fritar</label></li>
+                    </ul>
+                    <h2>Modo de Preparo:</h2>
+                    <h3>Batata Frita Temperada</h3>
+                    <ol>
+                        <li>Leve uma panela de ferro para a churrasqueira, adicione o óleo para fritar por imersão e coloque as batatas.</li>
+                        <li>Enquanto isso, coloque em uma tigela 2 colheres de sopa de páprica doce, 2 colheres de sopa de alho em pó, 2 colheres de sopa de cebola em pó, 2 colheres de sopa de pimenta-de-caiena, 1 colher de sopa de pimenta-do-reino moída, 1 colher de sopa de orégano triturado, 1 colher de chá de pimenta-branca, 1 colher de chá de cominho, um quarto de colher de chá de louro em pó e 1 colher de sopa de sal. Misture e reserve.</li>
+                        <li>Retire a batata da panela e tempere.</li>
+                    </ol>
+                    <h3>Molho de Picles</h3>
+                    <ol>
+                        <li>Em um recipiente, adicione páprica doce a gosto, pimenta-do-reino moída a gosto, sal a gosto, ketchup a gosto, mostarda a gosto e os picles picados. Misture e reserve.</li>
+                   
+                    </ol>
+                    <h3>Hambúrguer</h3>
+                    <ol>
+                        <li>Em uma tigela, misture o peito bovino com o cupim e, com as mãos, modele em formato de hambúrguer. Lembre-se que a carne precisa estar gelada.</li>
+                        <li>Leve para grelhar na churrasqueira e tempere com sal e pimenta-do-reino moída a gosto. Deixe grelhando de 1 a 2 minutos de cada lado. Por cima da carne, coloque o queijo cheddar. Reserve a carne depois de pronta e deixe descansando por alguns minutos, para preservar o suco da carne.</li>
+                        <li>Leve as fatias de bacon para dourar na brasa e reserve.</li>
+                        <li>Corte os pães brioche, pincele um pouco de manteiga e toste-os brevemente na brasa.</li>
+                        <li>Retire o pão da brasa e monte o hambúrguer. Junte a carne, acrescente o molho de picles, as fatias de bacon, o queijo cheddar e finalize com alface.</li>
+                    </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programando Sabor</title>
+    <link rel="icon" href="logoo.png" type="imagem">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            border-bottom: 3px solid #f8f9fa;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .form-check-label {
+            font-size: 16px;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-black text-white text-center p-5">
+        <h1>Programando Sabor</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logoo.png" alt="Logo" style="height: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doces.html">Doces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="salgados.html">Salgados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="drinks.html">Drinks</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mais Sabores
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="japonesa.html">Comida Japonesa</a></li>
+                            <li><a class="dropdown-item" href="mexicana.html">Comida Mexicana</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="text-black text-center p-5">Fepa</h1>
+
+    <main class="container">
+        <section class="row">
+            <div class="col-sm-12 col-lg-6 mx-auto">
+                <div class="card">
+                    <img style="width: 100%; height: auto; margin: 0 auto;" src="https://s2-receitas.glbimg.com/FOhLAxSVOIP6FN6RZh_SheRafSw=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/N/m/S6EH4UTaCi7nkBCeyBKg/fepa-flavia-di-na-piscina.jpg" class="card-img-top" alt="Fepa">
+                    <div class="card-body">
+                        <h5 class="card-title">Fepa</h5>
+                        <p class="card-text">
+                            O Fepa é uma fusão exótica de sabores tropicais que transporta você para um paraíso de paladar. Este coquetel exuberante combina o calor do rum prata com a doçura suculenta do abacaxi fresco, equilibrado pela nota picante do açúcar de gengibre e enriquecido pelo sabor cremoso do rum de coco. As folhas de hortelã adicionam um toque de frescor revigorante, enquanto a água de coco completa a experiência, proporcionando uma sensação refrescante e inesquecível. Uma verdadeira explosão de sabor tropical em cada gole.
+                        </p>
+                        <h2 class="mt-4">Ingredientes:</h2>
+                        <ul class="list-unstyled">
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="50ml-rum"><label class="form-check-label" for="50ml-rum">50 mililitros de rum prata</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="cubos-abacaxi" checked><label class="form-check-label" for="cubos-abacaxi">3 a 4 cubos de abacaxi</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="açúcar de gengibre"><label class="form-check-label" for="açúcar de gengibre">2 colheres bailarinas de açúcar de gengibre</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="50ml-rum-coco"><label class="form-check-label" for="50ml-rum-coco">5 mililitros de rum de coco</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="hortela"><label class="form-check-label" for="hortela">8 folhas hortelã</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" value="" id="agua-coco"><label class="form-check-label" for="agua-coco">Água de coco</label></li>
+                        </ul>
+                        <h2 class="mt-4">Modo de Preparo:</h2>
+                        <ol>
+                            <li>Na coqueteleira, coloque o abacaxi e o açúcar. Macere bem.</li>
+                            <li>Adicione, em seguida, o hortelã, o rum de coco e o rum prata.</li>
+                            <li>Adicione gelo e bata bastante</li>
+                            <li>Sirva em um copo Old Fashioned (também conhecido como o copo da caipirinha) e finalize completando com a água de coco e um ramo de hortelã para ter um aroma mais refrescante</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body

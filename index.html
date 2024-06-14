@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programando Sabor</title>
+    <link rel="icon" href="logoo.png" type="imagem">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        header {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        .navbar {
+            background-color: #000;
+            border-bottom: 3px solid #f8f9fa;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: #fff !important;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .navbar-toggler {
+            border-color: #fff;
+        }
+
+        .round-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        h1 {
+            color: #000;
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        .carousel-custom-size {
+            max-width: 80%;
+            margin: auto;
+        }
+
+        .carousel-custom-size img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .toast-container {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            z-index: 1100;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logoo.png" alt="Logo" style="height: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+                aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doces.html">Doces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="salgados.html">Salgados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="drinks.html">Drinks</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Mais Sabores
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="japonesa.html">Comida Japonesa</a></li>
+                            <li><a class="dropdown-item" href="mexicana.html">Comida Mexicana</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="text-black text-center p-5">Destaques da Semana</h1>
+
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-custom-size mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://receitinhas.com.br/wp-content/uploads/2017/06/shreddedbeef-589dd2835f9b58819c85b6e9-scaled.jpg"
+                    class="d-block w-100" alt="Primeiro slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Costela de boi desfiada com purê de mandioca na brasa</h5>
+                    <p>Reunir a família em volta da churrasqueira é sempre um momento especial. Que tal surpreendê-los
+                        com uma receita completa e deliciosa? Costela de boi desfiada com purê de mandioca na brasa é
+                        uma opção irresistível para um almoço memorável.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://anamariareceitas.com.br/wp-content/uploads/2023/02/Salada-de-Abobrinha.jpg"
+                    class="d-block w-100" alt="Segundo slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Salada de abobrinha com lascas de parmesão </h5>
+                    <p>Que tal uma salada refrescante e cheia de sabor? Experimente a salada de abobrinha com lascas de
+                        parmesão. Uma opção simples e prática, pronta em menos de 15 minutos, perfeita para uma refeição
+                        leve e rápida.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.correiodoestado.com.br/upload/dn_arquivo/2023/11/espaguete-a-carbonara.jpg"
+                    class="d-block w-100" alt="Terceiro slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Espaguete à carbonara</h5>
+                    <p>Surpreender seus convidados com um verdadeiro clássico italiano? O espaguete à carbonara é uma
+                        deliciosa e reconfortante opção que combina macarrão cozido al dente com um molho cremoso</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+
+    <!-- Fim do Carousel -->
+
+    <!-- Toast -->
+    <div class="toast-container">
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="logoo.png" class="rounded me-2" alt="Logotipo" style="width: 20px; height: 20px;">
+                <strong class="me-auto">Programando Sabor</strong>
+                <small class="text-muted">agora</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Bem-vindo ao nosso site de receitas! Confira as últimas delícias que preparamos para você.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var toastElList = [].slice.call(document.querySelectorAll('.toast'));
+            var toastList = toastElList.map(function (toastEl) {
+                return new bootstrap.Toast(toastEl, {
+                    autohide: false
+                }).show();
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+
+      <main class="container-fluid">
+          <section class="row">
+              <!-- Cards -->
+              <!-- Coluna 1 -->
+              <div class="col-sm-6 col-lg-4 p-3">
+                  <div class="card">
+                      <img style="height: 500px;" src="https://th.bing.com/th/id/OIG3.JS3K6Ug5wCK7FAgqusk3?w=1024&h=1024&rs=1&pid=ImgDetMain" class="card-img-top" alt="Imagem 1">
+                      <div class="card-body">
+                          <h5 class="card-title">Pudim</h5>
+                          <p class="card-text">Que tal experimentar uma versão especial do clássico pudim da vovó? Agora com toque especial: gengibre e mel para adoçar ainda mais. Essa receita clássica, modificada com carinho no Brasil, convida você a saborear essa combinação irresistível de sabores.</p>
+                          <a href="pudim.html" class="btn btn-danger">Saboreie mais</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Coluna 2 -->
+              <div class="col-sm-6 col-lg-4 p-3">
+                  <div class="card">
+                      <img style="height: 500px;" src="https://th.bing.com/th/id/OIG4..XrOXSIhaC5lTG4II6Tt?w=1024&h=1024&rs=1&pid=ImgDetMain" class="card-img-top" alt="Imagem 2">
+                      <div class="card-body">
+                          <h5 class="card-title">Donuts</h5>
+                          <p class="card-text">Uma sobremesa clássica da culinária norte-americana. Essas rosquinhas fritas são versáteis, podendo ser cobertas e recheadas de várias maneiras, além de poderem ser decoradas com granulados e confeitos, proporcionando uma experiência deliciosa e personalizada.</p>
+                          <a href="donuts.html" class="btn btn-danger">Saboreie mais</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Coluna 3 -->
+              <div class="col-sm-6 col-lg-4 p-3">
+                  <div class="card">
+                      <img style="height: 500px;" src="https://th.bing.com/th/id/OIG2.nKoLdgJEZ37Qk8N0rBA6?pid=ImgGn" class="card-img-top" alt="Imagem 3">
+                      <div class="card-body">
+                          <h5 class="card-title">Strudel</h5>
+                          <p class="card-text">Esta versão do clássico strudel traz uma combinação inusitada de sabores: morango e coco, envoltos em uma massa folhada crocante. Perfeita para compartilhar em momentos especiais com amigos e familiares, ou para saborear em um reconfortante lanche da tarde.</p>
+                          <a href="strudel.html" class="btn btn-danger">Saboreie mais</a>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Coluna 4 -->
+              <div class="col-sm-6 col-lg-4 p-3">
+                  <div class="card">
+                      <img style="height: 500px;" src="https://s2-receitas.glbimg.com/FOhLAxSVOIP6FN6RZh_SheRafSw=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/N/m/S6EH4UTaCi7nkBCeyBKg/fepa-flavia-di-na-piscina.jpg" class="card-img-top" alt="Fepa">
+                      <div class="card-body">
+                          <h5 class="card-title">Fepa</h5>
+                          <p class="card-text">Experimente o Fepa: uma explosão tropical de sabores com rum, abacaxi e água de coco. Combine rum prata com cubos de abacaxi fresco, açúcar de gengibre, rum de coco e folhas de hortelã. E água de coco para uma refrescante e irresistível experiência sensorial.</p>
+                          <a href="fepa.html" class="btn btn-danger">Beba mais</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Coluna 5 -->
+              <div class="col-sm-6 col-lg-4 p-3">
+                  <div class="card">
+                    <img style="height: 500px;" src="https://s2-receitas.glbimg.com/3h1FvUcDs3GTvXF7ePRWgfqzcbc=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/5/3/CMAotWQBGazhSx66FitQ/passion-whisky-maracuja-limao-siciliano-e-whisky-39-.jpg" class="card-img-top" alt="Passion">
+                      <div class="card-body">
+                          <h5 class="card-title">Passion Whisky</h5>
+                          <p class="card-text">Saboreie o Passion Whisky: uma mistura equilibrada de maracujá, limão-siciliano, gengibre e whisky. Este coquetel refrescante é servido em um copo de whisky e adornado com um ramo de manjericão, realçando os sabores tropicais da bebida.</p>
+                          <a href="passion.html" class="btn btn-danger">Beba mais</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Coluna 6 -->
+              <div class="col-sm-6 col-lg-4 p-3">
+                  <div class="card">
+                      <img style="height: 500px;" src="https://s2-receitas.glbimg.com/ZA4AQOhHBMTBqPW6xnvLP3EjDhc=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/V/M/Cq8ABYROetqezVlUSRyw/moderninha-na-piscinha-flavia-di-5-.jpg" class="card-img-top" alt="Moderninha 3">
+                      <div class="card-body">
+                          <h5 class="card-title">Moderninha</h5>
+                          <p class="card-text">Experimente a Moderninha: um drink refrescante de cachaça, limão, mel e gengibre, com um toque caribenho. Preparado na coqueteleira com gelo, é servido no copo on the rocks e decorado com fatias de limão e lascas de gengibre.</p>
+                          <a href="moderninha.html" class="btn btn-danger">Beba mais</a>
+                      </div>
+                  </div>
+              </div>
+              <!-- Coluna 7 -->
+              <div class="col-sm-6 col-lg-4 p-3">
+                <div class="card">
+                    <img style="height: 500px;" src="https://churrasco.coz.br/wp-content/uploads/2021/01/hamburguer-na-churrasqueira.jpg" class="card-img-top" alt="Hamburguer">
+                    <div class="card-body">
+                        <h5 class="card-title">Hambúrguer com Batata Frita Temperada</h5>
+                        <p class="card-text">O clássico hambúrguer com batatas já é um sabor delicioso, mas vamos provar essa receita mais saborosa ainda! O hambúrguer com batata frita temperada é ótimo para comer como lanche especial ou como um jantar diferente do casual.</p>
+                        <a href="hamburguer.html" class="btn btn-danger">Deguste mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coluna 8 -->
+            <div class="col-sm-6 col-lg-4 p-3">
+                <div class="card">
+                    <img style="height: 500px;" src="https://guiadacozinha.com.br/wp-content/uploads/2019/10/frango-recheado-com-catupiry-e-bacon-43942.jpg" class="card-img-top" alt="Empanado">
+                    <div class="card-body">
+                        <h5 class="card-title">Empanado de Frango Recheado</h5>
+                        <p class="card-text">Com vontade de comer algo divino? O empanado de frango recheado com queijo é o ideal para você preencher sua fome, mas nada de ficar com água na boca pelo desejo! Veja agora mesmo como fazer a receita!</p>
+                        <a href="empanado.html" class="btn btn-danger">Deguste mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coluna 9 -->
+            <div class="col-sm-6 col-lg-4 p-3">
+                <div class="card">
+                    <img style="height: 500px;" src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-wrap-1.jpg" class="card-img-top" alt="Wrap">
+                    <div class="card-body">
+                        <h5 class="card-title">Wrap de Mandioca</h5>
+                        <p class="card-text">Ele é fácil, é simples, mas preenche sua vontade de comer algo saboroso! O wrap de mandioca com dois ingredientes tem o que é preciso pra você ficar totalmente satisfeito com o sabor que ele propõe. É isso que você precisa!</p>
+                        <a href="wrap.html" class="btn btn-danger">Deguste mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+          </section>
+          
+          <!-- Cozinheiros -->
+          <h1 class="text-black text-center p-5">Cozinheiros De Mão Cheia!</h1>
+          <section class="row">
+              <div class="col-sm-4 image-container">
+                  <img src="https://telaviva.com.br/wp-content/uploads/2023/12/Ana-Maria-e-Louro-Mane_Credito-TV-Globo_-Daniela-Toviansky-scaled-e1701916814431.webp" class="round-image" alt="Imagem Redonda 1">
+                  <h2>Ana Maria Braga</h2>
+                  <p>Ana Maria Braga, renomada na culinária brasileira, é conhecida por sua paixão por cozinhar e por compartilhar receitas práticas e deliciosas com seu público. Com seu carisma único, ela simplifica receitas complexas, tornando-as acessíveis a todos os seus telespectadores.</p>
+              </div>
+              <div class="col-sm-4 image-container">
+                  <img src="img2.jpeg" class="round-image" alt="Imagem Redonda 2">
+                  <h2>Cabra Jura</h2>
+                  <p>Juarez de Souza, cozinheiro e assador familiar a muitas décadas é conhecido pelo churrasco bem assado, a feijoada temperada e a galinha caipira com massa que agrada como janta no inverno.</p>
+              </div>
+              <div class="col-sm-4 image-container">
+                  <img src="https://veja.abril.com.br/wp-content/uploads/2017/07/erick-jacquin-2017-21085.jpg?quality=90&strip=info" class="round-image" alt="Imagem Redonda 3">
+                  <h2>Érick Jacquin</h2>
+                  <p>Érick Jacquin, renomado chef francês, é conhecido por sua habilidade excepcional na culinária e sua personalidade marcante. Com um estilo único e exigente, Jacquin cativa o público com sua técnica impecável e seu senso de humor afiado.</p>
+                </div>
+                </section>
+                </main>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+              </body>
+
+              <!-- Footer -->
+              <footer class="bg-dark text-white text-center text-lg-start">
+                <div class="container p-4">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Sobre o Site</h5>
+                            <p>
+                                Programando Sabor é um site criado para uma avaliação na matéria de Introdução ao Desenvolvimento Web, foi pensada depois de acessar alguns sites de receitas que pareciam frequentemente cheios de anuncios e não colaboravam com o acesso a culinária. Adoramos cozinhar nesse site, e programar também. Espero que tenham tido 
+                                uma ótima experiência enquanto estiveram aqui!
+                            </p>
+                        </div>
+            
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Links úteis</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="index.html" class="text-white">Início</a>
+                                </li>
+                                <li>
+                                    <a href="doces.html" class="text-white">Doces</a>
+                                </li>
+                                <li>
+                                    <a href="salgados.html" class="text-white">Salgados</a>
+                                </li>
+                                <li>
+                                    <a href="drinks.html" class="text-white">Drinks</a>
+                                </li>
+                            </ul>
+                        </div>
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2024 Programando Sabor
+                </div>
+            </footer>
+            </html>
+  
+  

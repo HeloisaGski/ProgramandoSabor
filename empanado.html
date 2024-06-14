@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programando Sabor</title>
+    <link rel="icon" href="logoo.png" type="imagem">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            border-bottom: 3px solid #f8f9fa;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .form-check-label {
+            font-size: 16px;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-black text-white text-center p-5">
+        <h1>Programando Sabor</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logoo.png" alt="Logo" style="height: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doces.html">Doces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="salgados.html">Salgados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="drinks.html">Drinks</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mais Sabores
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="japonesa.html">Comida Japonesa</a></li>
+                            <li><a class="dropdown-item" href="mexicana.html">Comida Mexicana</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="text-black text-center p-5">Empanado de Frango Recheado</h1>
+
+    <main class="container">
+        <section class="row">
+            <div class="col-sm-12 col-lg-6 mx-auto">
+                <div class="card">
+                    <img style="width: 100%; height: auto; margin: 0 auto;" src="https://assets.unileversolutions.com/recipes-v2/232679.jpg" class="card-img-top" alt="Imagem 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Empanado de Frango Recheado</h5>
+                        <p class="card-text">
+                            Ele sabe que é irresistível, não sabe? O Empanado de Frango tem seu valor e nessa receita o sabor dele triplica com tanto sabor e recheio!
+                        </p>
+                        <h2 class="mt-4">Ingredientes:</h2>
+                        <ul class="list-unstyled">
+                            <li><input class="form-check-input me-2" type="checkbox" id="peito-frango"><label for="peito-frango">500 gramas de peito sem pele e sem osso cortada em cubos</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="bacon-frango"><label for="bacon-frango">200 gramas de bacon com bastante gordura cortado em cubos</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="cebola-frango"><label for="cebola-frango">150 gramas de cebola cortada em meia-lua</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="alho-frango"><label for="alho-frango">4 dentes de alho inteiros</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="cenoura-frango"><label for="cenoura-frango">100 gramas ou meia xícara de chá de cenoura em meia-lua</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="caiena-frango"><label for="caiena-frango">Meia colher de chá de pimenta-de-caiena</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="salsinha-frango"><label for="salsinha-frango">3 colheres de sopa de salsinha picada grosseiramente</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="sal-frango"><label for="sal-frango">1 e meia colher de chá de sal</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="mucarela-frango"><label for="mucarela-frango">400 gramas de muçarela ralada grosso</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="farinha-trigo-frango"><label for="farinha-trigo-frango">150 gramas de farinha trigo</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="ovos-frango"><label for="ovos-frango">3 ovos batidos</label></li>
+                            <li><input class="form-check-input me-2" type="checkbox" id="farinha-panko-frango"><label for="farinha-panko-frango">300 gramas de farinha panko</label></li>
+                        </ul>
+                        <h2>Modo de Preparo:</h2>
+                        <ol>
+                            <li>No processador, coloque 500 gramas de peito sem pele e sem osso cortada em cubos, 200 gramas de bacon com bastante gordura cortado em cubos, 150 gramas de cebola cortada em meia-lua, 4 dentes de alho inteiros, 100 gramas ou meia xícara de chá de cenoura em meia-lua, meia colher de chá de pimenta-de-caiena, sal e 3 colheres de sopa de salsinha picada grosseiramente.</li>
+                            <li>Processe por mais ou menos 5 minutos ou até formar uma pasta. Mexa a massa com uma espátula de vez em quando para processar por igual.</li>
+                            <li>Desligue o processador e divida a massa em porções de 30 gramas.</li>
+                            <li>Abra cada porção entre 2 sacos plásticos formando 1 disco, recheie com 15 gramas de queijo muçarela ralado grosso e modele no formato de meia-lua ou como desejar.</li>
+                            <li>Com cuidado, passe na farinha de trigo, depois nos ovos batidos e na farinha panko.</li>
+                            <li>Frite em uma panela com bastante óleo quente, a mais ou menos 170 graus Célsius, em fogo alto por 2 minutos de cada lado.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body
